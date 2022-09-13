@@ -19,7 +19,7 @@ public class MyView {
         dispatcher.forward(request,response);
     }
 
-    public void render(Map<String, Object> model, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void  render(Map<String, Object> model, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         modelToRequestAttribute(model, request);
         RequestDispatcher dispatcher = request.getRequestDispatcher(viewPath);
