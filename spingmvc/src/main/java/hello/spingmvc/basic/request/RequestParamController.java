@@ -15,10 +15,10 @@ public class RequestParamController {
     @RequestMapping("/request-param-v1")
     public void requestParamV1(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String username = request.getParameter("username");
-        int age = Integer. parseInt(request.getParameter("age"));
+        int age = Integer.parseInt(request.getParameter("age"));
 
-        log.info("username = {}",username);
-        log.info("age = {}",age);
+        log.info("username = {}", username);
+        log.info("age = {}", age);
 
         response.getWriter().write("ok");
     }
