@@ -12,15 +12,15 @@ public class LogTestController {
 
 //    private final Logger log = LoggerFactory.getLogger(LogTestController.class);
 
-    @RequestMapping ("/log-test")
-    public String logTest(){
+    @RequestMapping("/log-test")
+    public String logTest() {
         String name = "Spring";
 
-        log.trace("trace log={}" ,name);
+        log.trace("trace log={}", name);
         log.debug("debug log={}", name);
-        log.info("info log={}" ,name);
-        log.warn("warn log={}" , name);
-        log.error("error log={}" , name);
+        log.info("info log={}", name);
+        log.warn("warn log={}", name);
+        log.error("error log={}", name);
 
         return "ok";
 
