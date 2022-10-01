@@ -109,4 +109,20 @@ public class RequestParamController {
 
         return "ok";
     }
+
+    @ResponseBody
+    @RequestMapping("/model-attribute-v2")
+//    public String modeAttributeV1(@RequestParam String username, @RequestParam int age){
+    public String modeAttributeV2(HelloData helloData){//ModelAttribute 생략 가능하다
+        //String int Integer 과 같은 단순 타입은 @RequestParam
+        //나머지는 @ModelAttribute 로 처리된다  argument resolver Http 와 같은 애들 뺴고
+//        HelloData helloData = new HelloData();
+//        helloData.setUsername(username);
+//        helloData.setAge(age);
+        //@ModelAttribute 가 위 주석 역할을 다 수행해준다....
+        log.info("username = {}", helloData.getUsername());
+        log.info("age = {}", helloData.getAge());
+
+        return "ok";
+    }
 }
