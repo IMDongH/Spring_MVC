@@ -274,6 +274,7 @@ public class ValidationItemControllerV2 {
         redirectAttributes.addAttribute("itemId", savedItem.getId());
         redirectAttributes.addAttribute("status", true);
         return "redirect:/validation/v2/items/{itemId}";
+
     }
 
     @GetMapping("/{itemId}/edit")
