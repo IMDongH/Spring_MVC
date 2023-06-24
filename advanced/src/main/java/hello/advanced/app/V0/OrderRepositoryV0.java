@@ -8,6 +8,8 @@ import org.springframework.stereotype.Repository;
 @RequiredArgsConstructor
 public class OrderRepositoryV0 {
 
+
+    //예외 테스트 로직
     public void save(String itemId){
 
         if (itemId.equals("ex")) {
