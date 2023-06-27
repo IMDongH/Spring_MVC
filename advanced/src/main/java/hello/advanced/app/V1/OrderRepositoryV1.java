@@ -1,4 +1,4 @@
-package hello.advanced.app.V0;
+package hello.advanced.app.V1;
 
 
 import lombok.RequiredArgsConstructor;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 @RequiredArgsConstructor
-public class OrderRepositoryV0 {
+public class OrderRepositoryV1 {
 
     
     //예외 테스트 로직
