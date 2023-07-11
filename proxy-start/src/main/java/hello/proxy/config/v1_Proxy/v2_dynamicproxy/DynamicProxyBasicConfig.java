@@ -5,13 +5,11 @@ import hello.proxy.config.v1_Proxy.v2_dynamicproxy.handler.LogTraceBasicHandler;
 import hello.proxy.trace.logtrace.LogTrace;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.annotation.Order;
-import org.springframework.web.bind.annotation.PatchMapping;
 
 import java.lang.reflect.Proxy;
 
 @Configuration
-public class DynamicProxyBasicConfg {
+public class DynamicProxyBasicConfig {
 
 
     @Bean
